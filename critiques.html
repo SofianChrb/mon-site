@@ -1,0 +1,13 @@
+---
+layout: default
+title: "Critiques"
+---
+
+<h1>Critiques</h1>
+<ul>
+    {% for critique in site.critiques %}
+        <li>
+            <a href="{{ critique.url | relative_url }}">{{ critique.title }}</a>
+        </li>
+    {% endfor %}
+</ul>

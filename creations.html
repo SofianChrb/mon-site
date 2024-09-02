@@ -1,0 +1,13 @@
+---
+layout: default
+title: "Créations"
+---
+
+<h1>Créations</h1>
+<ul>
+    {% for creation in site.creations %}
+        <li>
+            <a href="{{ creation.url | relative_url }}">{{ creation.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
